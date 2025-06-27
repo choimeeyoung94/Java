@@ -24,6 +24,9 @@ public class ForEx {
     oddAverage = (double)(oddTotal) / oddCount; // oddTotal을 double로 casting 하면 oddCount는 double로 promotion 된다
     // 형변환을 안하면 int / int의 결과가 int가 되어서 소수점이 버려지게 된다
     // 따라서 강제형변환을 해줘야 정확한 평균 값이 계산된다
+    // 연산 대상 중 하나가 double이면 나머지도 자동으로 double로 Promotion된다
+    // Promotion: 작은 타입 -> 큰 타입으로 자동 변환되는 것
+    
     System.out.println(oddAverage);
     
     
