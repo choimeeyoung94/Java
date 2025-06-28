@@ -11,7 +11,16 @@ public class Ex09 {
     // 2x2=4  3x2=6  ...  9x2=18
     // ...
     // 2x9=18 3x9=27 ...  9x9=81 
-    
+	  for (int i = 2; i <= 9; i++) {
+	    	for (int j = 1; j <= 9; j++) {
+	    		
+	    		System.out.print(i + "*" + j + "=" + (i*j) + " ");
+				if (j == 9) {
+	    			System.out.println();
+	    		}
+	    	}
+	    }
+	    
     
 
   }

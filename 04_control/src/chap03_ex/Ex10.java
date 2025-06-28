@@ -23,7 +23,12 @@ public class Ex10 {
      * i=1~5, j=1~i
      */
 
-    
+    for (int i = 1; i <= 5; i++) {
+    	for (int j = 1; j <= i; j++) {
+    		System.out.print("*");
+    	}
+    	System.out.println();
+    }
     
     /*
      * 아래의 피라미드 모양도 한 번 고려해 보세요.
@@ -49,6 +54,40 @@ public class Ex10 {
      *      ***
      *       *
      */
+    
+    for (int i = 5; i >= 1; i--) {
+	  for (int j = 1; j <= i; j++) {
+	    System.out.print("*");
+	  }
+	  System.out.println();
+	}
+    
+    int height = 5;
+    for (int i = 1; i <= height; i++) {
+      // 공백 출력
+      for (int j = 1; j <= height - i; j++) {
+        System.out.print(" ");
+      }
+      // 별 출력
+      for (int j = 1; j <= 2 * i - 1; j++) {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+    
+    height = 5;
+    for (int i = height; i >= 1; i--) {
+      // 공백 출력
+      for (int j = 1; j <= height - i; j++) {
+        System.out.print(" ");
+      }
+      // 별 출력
+      for (int j = 1; j <= 2 * i - 1; j++) {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+    
     
   }
 
