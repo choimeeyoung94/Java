@@ -9,10 +9,7 @@ public class Ex03 {
     int num2 = 40;
     String op = "+";
     
-    switch(op) {
-    case "+": (num1 + num2); break;
-    }
-    
+  
     
   }
 
