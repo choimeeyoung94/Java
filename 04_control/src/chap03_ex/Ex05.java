@@ -17,11 +17,11 @@ public class Ex05 {
     int moneyResult = 0;
     int money = 70;
     int count = 0;
-	while (moneyResult <= result) {
-		++count;
-		moneyResult += money;
-		System.out.println(count +"회 모금액 "+ moneyResult + "원");
-	}  
+	  while (moneyResult <= result) {
+  		++count;
+  		moneyResult += money;
+  		System.out.println(count +"회 모금액 "+ moneyResult + "원");
+	  }  
 	  
   }
 

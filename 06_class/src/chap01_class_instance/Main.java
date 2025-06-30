@@ -1,6 +1,6 @@
 package chap01_class_instance;
 
-public class InstanceEx {
+public class Main {
 
   public static void main(String[] args) {
     // 클래스 Book 타입의 객체 선언(참조변수 선언)

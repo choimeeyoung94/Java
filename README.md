@@ -189,3 +189,33 @@ seats[2][3] = "김경진";
   System.out.println(book1);
 
 ```
+
+## 메소드
+```
+반환타입 메소드명(매개변수1, 매개변수2,...) {
+  메소드 본문 코드
+  return 반환값
+}
+```
+- 반환타입과 반환값이 명시된다
+- 메소드이름만 작성해서 사용한다
+- void 반환이 없다
+- 메소드명 camelCase
+
+```
+ void methodE(int first, int...arrays) {   
+    System.out.println("methodE: " +first + ","
+        + " " +  Arrays.toString(arrays));
+  }
+ ```
+- 한개 이상의 정수 값을 전달 받는다
+- first 변수에 첫번째 값이 전달된다
+- int...arrays에 나머지 값들이 전달된다
+
+## 필드
+- 클래스가 가지는 값
+- 클래스가 선언하 변수 (일반 지역변수와 구분해서 필드라고 부른다)
+- 클래스에 포함된 모든 메소드는 필드를 사용할 수 있다
+- 일반 지역변수와 달리 선언만 하면 자동으로 초기화 된다(0, false, null 등)
+
+
