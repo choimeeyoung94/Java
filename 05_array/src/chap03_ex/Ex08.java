@@ -19,6 +19,17 @@ public class Ex08 {
         {3, 3}
     };
     
+    int count = 0;
+    for (int i = 0; i < 5; i++) {
+      for (int j = 0; j < 2; j++) {
+        count += apt[i][j];
+      }
+      System.out.println((i + 1) + "층에 " + count + "명 거주");
+      
+    }
+    
+    
+    
   }
   
 }

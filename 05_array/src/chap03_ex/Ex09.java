@@ -21,6 +21,8 @@ public class Ex09 {
     
     String[][] gugudan = new String[8][9];
     
+  
+    
   }
   
 }

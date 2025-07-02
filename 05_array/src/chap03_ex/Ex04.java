@@ -18,14 +18,13 @@ public class Ex04 {
 
     int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8};
 
-    for (int i = 0; i < numbers.length / 2; i++) {
-        int temp = numbers[i];
-        numbers[i] = numbers[numbers.length - 1 - i];
-        numbers[numbers.length - 1 - i] = temp;
+    int[] reverse = new int[numbers.length];
+    
+    for (int i = 0; i < numbers.length; i++) {
+      reverse[i] = numbers[numbers.length - 1 - i];
     }
 
-    System.out.println(Arrays.toString(numbers));
-    
+    System.out.println(Arrays.toString(reverse));
     
   }
   
