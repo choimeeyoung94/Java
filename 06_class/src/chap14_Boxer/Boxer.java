@@ -44,13 +44,11 @@ public class Boxer {
    * @param other 상대 복서(Boxer) 객체입니다.
    */
   public void punch(Boxer other) {
-   if (other.getEnergy() < 0) {
-     System.out.println("상대의 energy는 0 아래로 떨어질 수 없습니다.");
+   if (other.energy < power) {
+       other.energy = 0;
    }
- 
    other.setEnergy(other.getEnergy() - this.getPower());
    System.out.println("boxer2: " + this.getName() + " " + this.getEnergy());
    System.out.println("boxer1: " + other.getName() + " " + other.getEnergy());
   }
-  
 }

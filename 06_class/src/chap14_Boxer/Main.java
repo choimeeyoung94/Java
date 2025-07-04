@@ -14,18 +14,17 @@ public class Main {
         break;
       }
       boxer2.punch(boxer1);
+      
+      if (boxer1.getEnergy() == 0 || boxer2.getEnergy() == 0) {
+        break;
+      }
       boxer1.punch(boxer2);
     }
     
     
     // 누가 KO승을 했는지 확인할 수 있도록 name과 남은 energy를 출력합니다.
-    System.out.println("boxer1: " + boxer1.getName() + " " + boxer1.getEnergy());
-    System.out.println("boxer2: " + boxer2.getName() + " " + boxer2.getEnergy());
-    
-   
-    
-    
-    
+//    System.out.println("boxer1: " + boxer1.getName() + " " + boxer1.getEnergy());
+//    System.out.println("boxer2: " + boxer2.getName() + " " + boxer2.getEnergy());
   }
 
 }
