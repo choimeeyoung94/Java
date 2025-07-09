@@ -14,6 +14,7 @@ package chap15_Store_Customer;
 public class ProductAndChange {
 
   /* 구현 */
+  // Map으로 대체하는게 더 좋다
   private int count;
   private double change;
   

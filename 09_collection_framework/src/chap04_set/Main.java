@@ -65,7 +65,7 @@ public class Main {
     hobbies.add("여행");
     hobbies.add("게임");
     hobbies.add("OTT");
-    hobbies.add("게임"); // Set의 목적: 중복 저장 허용되지 않는다 (String은 자체적으로 equals 메소드에서 참조값이 같은지 비교하는 로직이 있기 때문에 중복저장이 안된다)
+    hobbies.add("게임"); // Set의 목적: 중복 저장 허용되지 않는다 (String은 자체적으로 equals 메소드에서 참조값이 같은지 비교하는 로직이 있기 때문에 중복저장이 안된다 String은 값(value) 을 기준으로 equals()를 오버라이딩하고 있기 때문에,Set과 같은 컬렉션에서 동일한 문자열은 중복 저장되지 않습니다.)
     hobbies.add("운동");
     
     System.out.println(hobbies); // 요소들의 저장 순서는 보장되지 않는다
@@ -92,6 +92,8 @@ public class Main {
   public static void treeSet() {
     
     // TreeSet: 정렬이 유지되는 Set
+    // 입력한 순서를 기억하진 않지만, 항상 정렬된 상태로 유지됩니다.
+    // TreeSet은 중복된 값을 저장하지 않으며, 값이 같다고 판단되는 경우 저장하지 않습니다.
     
     // Set 인터페이스의 하위 인터페이스
     SortedSet<String> hobbies = new TreeSet<String>(); // 기본 생성 방식은 오름차순 정렬을 지원한다
@@ -166,8 +168,8 @@ public class Main {
    //hashSet(); 
    //unique(); 
    // treeSet(); 
-  //linkedHashSet(); 
-    lottoNumber();  
+  linkedHashSet(); 
+    //lottoNumber();  
     
   }
 }
