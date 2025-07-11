@@ -3,6 +3,7 @@ package chap03_writer;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.io.PrintWriter;
 
 /*
  * java.io.Writer
@@ -18,7 +19,7 @@ import java.io.FileWriter;
  *    2) write(char[] cbuf) : 문자 배열 전체를 출력
  *    3) write(String str) : 문자열 전체를 출력
  *    4) write(String str, int off, int len) : 문자열 일부만 출력 (인덱스 off 부터 len개만큼)
- *    5) flush()
+ *    5) flush() : 내보내는 것이다
  *    6) close()
  *    
  * 
@@ -71,10 +72,30 @@ public class Main {
     
   }
   
+  // printLine 메소드를 지원한다
+  public static void printWriter() {
+    /*
+     * java.io.PrintWriter
+     * 
+     * 1. print, println, printf 등 다양한 출력 메소드를 지원하여 각 종 데이터를 쉽게 출력할 수 있다
+     * 2. Writer 클래스를 상속하는 메인 스트림 중 하나이다
+     * */
+    
+    File file = new File("D:/storage/test.txt");
+    
+    try(PrintWriter out = new PrintWriter(file)) {
+      out.println("여기가 어디요?");
+      out.println("여기는 가산이지요");
+    } catch (Exception e) {
+       e.printStackTrace();
+    }
+    
+  }
   
   
   public static void main(String[] args) {
    //fileWriter();
-   bufferedWriter();
+   //bufferedWriter();
+    printWriter();
   }
 }

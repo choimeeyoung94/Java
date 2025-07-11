@@ -23,7 +23,7 @@ import java.io.OutputStream;
  *     2) write(byte[] b) : 바이트 배열 전체를 출력한다
  *     3) write(byte[] b, int off, int len) : 바이트 배열 일부를 출력 (인덱스 off부터 len개만큼)
  *     4) flush() : 버퍼에 남아있는 데이터를 모두 출력하고 버퍼를 비운다
- *     5) close() : 출력 스트림을 닫고 시스템 자원을 해제한다
+ *     5) close() : 출력 스트림을 닫고 시스템 자원을 해제한다 (파일이 정상적으로 완료가 안돼기 때문에 close를 해줘야 한다)
  * */
 
 
